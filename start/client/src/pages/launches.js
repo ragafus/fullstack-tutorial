@@ -20,6 +20,8 @@ export const LAUNCH_TILE_DATA = gql`
 `;
 
 const GET_LAUNCHES = gql`
+  ${LAUNCH_TILE_DATA}
+  
   query launchList($after: String) {
     launches(after: $after) {
       cursor
@@ -29,7 +31,7 @@ const GET_LAUNCHES = gql`
       }
     }
   }
-  ${LAUNCH_TILE_DATA}
+  
 `;
 
 export default function Launches() {

@@ -11,7 +11,7 @@ const LaunchDetail = ({ id, site, rocket }) => (
     }}
   >
     <h3>
-      {rocket.name} ({rocket.type})
+      {rocket && rocket.name} ({rocket && rocket.type})
     </h3>
     <h5>{site}</h5>
   </Card>
