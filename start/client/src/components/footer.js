@@ -8,8 +8,7 @@ import { ReactComponent as CartIcon } from '../assets/icons/cart.svg';
 import { ReactComponent as ProfileIcon } from '../assets/icons/profile.svg';
 import { colors, unit } from '../styles';
 
-export default function Footer() {
-  return (
+const Footer = () => (
     <Container>
       <InnerContainer>
         <MenuItem to="/">
@@ -28,7 +27,6 @@ export default function Footer() {
       </InnerContainer>
     </Container>
   );
-}
 
 /**
  * STYLED COMPONENTS USED IN THIS FILE ARE BELOW HERE
@@ -50,3 +48,5 @@ const InnerContainer = styled('div')({
   padding: unit * 2.5,
   margin: '0 auto',
 });
+
+export default Footer;
